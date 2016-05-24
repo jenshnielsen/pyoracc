@@ -196,7 +196,8 @@ $ single ruling
         serialized_2 = self.parse_then_serialize(serialized_1)
         assert_equal(serialized_1, serialized_2)
 
-    def test_line_words(self):
+    @staticmethod
+    def test_line_words():
         """
         Get a sample line of words with unicode chars and test serialization.
         1. [MU] 1.03-KAM {iti}AB GE₆ U₄ 2-KAM
